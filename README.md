@@ -6,17 +6,17 @@ Summary of the code:
 
 This code uses the Ursina game engine library to create a simple interactive scene with a player character that can move around and interact with objects using the mouse.
 
-The from ursina import * statement imports all the necessary functions and objects from the Ursina library.
+## The from ursina import * statement imports all the necessary functions and objects from the Ursina library.
 
-The from ursina.prefabs.first_person_controller import FirstPersonController statement imports a ready-made object for creating a player character that can move around in a first-person perspective.
+## The from ursina.prefabs.first_person_controller import FirstPersonController statement imports a ready-made object for creating a player character that can move around in a first-person perspective.
 
-app = Ursina() creates the game/application object.
+## app = Ursina() creates the game/application object.
 
-Sky() creates a default sky background for the scene.
+## Sky() creates a default sky background for the scene.
 
-player = FirstPersonController() creates the player character.
+## player = FirstPersonController() creates the player character.
 
-A list named boxes is created to store instances of the Button class, which will be used to create cube-shaped objects.
+## A list named boxes is created to store instances of the Button class, which will be used to create cube-shaped objects.
 
 The for loop creates a 2D grid of 8x8 cubes by iterating over two nested ranges. Each cube is created using the Button class, with the model set to 'cube', origin_y set to 0.5 (so that the cube is resting on the ground), and position set to (k, 0, n) for each iteration. The Button class also takes in additional arguments to specify the texture, color, and highlight color of the cubes.
 
